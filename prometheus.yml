@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s  # Устанавливаем интервал сбора метрик каждые 15 секунд
+
+scrape_configs:
+  - job_name: 'my-go-application'
+    static_configs:
+      - targets: ['localhost:8080']
